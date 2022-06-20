@@ -29,6 +29,7 @@
 {
     display: grid;
     grid-template-columns: repeat(4,6rem);
+    grid-template-rows: repeat(2,1fr);
     justify-content:center;
     align-items: center;
 }
@@ -45,15 +46,54 @@
 {
     font-size: 30px;
     margin: 0px 10px ;
-    color: rgb(204, 186, 186);
+    color: rgb(216, 215, 215);
 }
 .Icons i:hover
 {
     color: rgb(224, 28, 61);
 }
-.Timer >div
+.Content-No , .Btn
 {
-    background-color: cadetblue;
-    float: left;
     margin: 10px;
+    padding: 20px;
+    color: rgb(224, 28, 61);
+    background-color: rgb(15, 8, 22);
+    border-radius: 10px;
+}
+.Content
+{
+    color: rgb(216, 215, 215);
+}
+.Buttons
+{
+    grid-column: 1/-1;
+}
+.Buttons .Btn
+{
+    border: none;
+    color: rgb(6, 238, 180);
+}
+.Btn:hover
+{
+    cursor: pointer;
+}
+.Btn i
+{
+    color: rgb(216, 215, 215);
+}
+.Noner
+{
+    pointer-events: none;
+}
+@media (max-width:400px)
+{
+    .Timer
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
+    .Btn
+    {
+        padding: 10PX;
+        margin: 5PX;
+    }
 }
