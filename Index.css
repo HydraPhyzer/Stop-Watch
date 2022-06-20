@@ -1,0 +1,59 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.Main h3
+{
+    color: white;
+    align-self: center;
+    word-spacing:5px;
+    letter-spacing: 5px;
+    padding: 10px;
+}
+.Main
+{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+
+    background: url('/Images/Stars.svg');
+    background-color: rgb(50, 35, 65);
+    text-align: center;
+    overflow:hidden;
+}
+.Timer
+{
+    display: grid;
+    grid-template-columns: repeat(4,6rem);
+    justify-content:center;
+    align-items: center;
+}
+.Icons
+{
+    background: url('/Images/Hills.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.Icons i
+{
+    font-size: 30px;
+    margin: 0px 10px ;
+    color: rgb(204, 186, 186);
+}
+.Icons i:hover
+{
+    color: rgb(224, 28, 61);
+}
+.Timer >div
+{
+    background-color: cadetblue;
+    float: left;
+    margin: 10px;
+}
